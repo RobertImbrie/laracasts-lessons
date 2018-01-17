@@ -12,7 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('welcome', [
-        'name' => 'world'
-    ]);
+    return view('welcome')->with('name', 'World');
 });
