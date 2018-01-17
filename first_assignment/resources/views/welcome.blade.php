@@ -19,8 +19,8 @@
     @include ('layouts.nav')
     @include ('layouts.header')
     <div class="container">
-        @include ('posts')
-        @include ('sidebar')
+        @yield ('content')
+        @include ('sidebar.index')
     </div><!-- /.container -->
     @include ('layouts.footer')
   </body>
