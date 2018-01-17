@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome')->with('name', 'World');
+    $name = 'Jeffrey';
+    $age = 31;
+    return view('welcome', compact('name', 'age'));
 });
