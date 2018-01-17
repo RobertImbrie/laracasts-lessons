@@ -12,7 +12,10 @@
 */
 
 Route::get('/', function () {
-    $name = 'Jeffrey';
-    $age = 31;
-    return view('welcome', compact('name', 'age'));
+    $tasks = [
+        'eat eggs',
+        'bathe in eggs',
+        'cook eggs'
+    ];
+    return view('welcome', compact('tasks'));
 });
